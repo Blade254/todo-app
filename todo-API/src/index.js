@@ -1,6 +1,7 @@
 const express = require('express');
 const { poolConnect } = require('./db/dbConfig');
 const cors = require('cors')
+const morgan = require('morgan');
 
 //import routes
 const todoRoutes = require('./routes/todoRoutes');
@@ -9,6 +10,7 @@ const app = express();
 const port = 5000;
 
 // Middleware 
+app.use(morgan('combined'))
 app.use(cors());
 app.use(express.json());
 

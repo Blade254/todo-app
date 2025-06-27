@@ -32,3 +32,5 @@ function AddTodoForm({addTodo}) {
         </form>
     )
 }
+
+export default AddTodoForm;

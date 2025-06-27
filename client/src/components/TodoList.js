@@ -19,3 +19,5 @@ function Todolist({ todos, toggleComplete, deleteTodo }) {
         </div>
     );
 }
+
+export default Todolist;

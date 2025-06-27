@@ -2,7 +2,7 @@ import React from 'react';
 
 function TodoItem({ todo, toggleComplete, deleteTodo }) {
     return (
-        <div classname="flex items-center bg-slate-800 p-4 rounded-lg shadow-md transition-all duration-300 hover:bg-slate-700">
+        <div className="flex items-center bg-slate-800 p-4 rounded-lg shadow-md transition-all duration-300 hover:bg-slate-700">
             <div 
             className="flex-grow cursor-pointer"
             onClick={() => toggleComplete(todo.id, todo.is_completed)}
@@ -24,3 +24,5 @@ function TodoItem({ todo, toggleComplete, deleteTodo }) {
         </div>
     )
 }
+
+export default TodoItem;
